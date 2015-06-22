@@ -3,17 +3,21 @@
 namespace Arr;
 
 
-class filter {
+class Filter
+{
 
-    public function __construct($array){
+    public function __construct($array)
+    {
         $this->array = $array;
     }
 
-    public function callbackFilter($array){
-        return($array != FALSE && $array != NULL && $array != '');
+    public function callbackFilter($array)
+    {
+        return ($array != false && $array != null && $array != '');
     }
 
-    public function filter(){
-        return array_filter($this->array, array($this, 'callbackFilter'));
+    public function filter()
+    {
+        return array_filter($this->array, [$this, 'callbackFilter']);
     }
 }

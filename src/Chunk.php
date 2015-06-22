@@ -3,14 +3,17 @@
 namespace Arr;
 
 
-class Chunk {
+class Chunk
+{
 
-    public function __construct($array, $size){
+    public function __construct($array, $size)
+    {
         $this->array = $array;
         $this->size = $size;
     }
 
-    public function chunkCreator(){
+    public function chunkCreator()
+    {
         return array_chunk($this->array, $this->size);
     }
 }
