@@ -25,4 +25,10 @@ class UnzipTest extends \PHPUnit_Framework_TestCase
 
         $this->assertEquals($expected, $unzip->unzip($array));
     }
+
+    public function testSemmi()
+    {
+        // TODO: ?
+        $this->assertFalse(method_exists((new UnzipArray()), "semmi"));
+    }
 }
