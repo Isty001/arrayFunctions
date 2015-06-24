@@ -2,13 +2,13 @@
 
 namespace Arr\Tests;
 
-use Arr\Zip;
+use Arr\ZipArray;
 
 class ZipTest extends \PHPUnit_Framework_TestCase {
 
     public function testZip(){
 
-        $zip = new Zip();
+        $zip = new ZipArray();
         $array1 = ['fred', 'barney'];
         $array2 = [30, 40];
         $array3 = [2, 1];
